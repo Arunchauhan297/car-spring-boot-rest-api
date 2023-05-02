@@ -68,6 +68,6 @@ public class CarController {
     public ResponseEntity deleteCar(@PathVariable Long id) {
         carService.deleteById(id);
 
-        return ResponseEntity.status(HttpStatus.ACCEPTED).build();
+        return ResponseEntity.status(HttpStatus.OK).build();
     }
 }

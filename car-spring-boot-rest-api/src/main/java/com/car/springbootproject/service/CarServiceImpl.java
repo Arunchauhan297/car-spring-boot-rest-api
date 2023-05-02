@@ -2,10 +2,13 @@ package com.car.springbootproject.service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Supplier;
 
 import org.springframework.stereotype.Service;
 
+import com.car.springbootproject.dto.CarDto;
 import com.car.springbootproject.entity.Car;
+import com.car.springbootproject.mapper.CarMapper;
 import com.car.springbootproject.repository.CarRepository;
 
 @Service
@@ -42,6 +45,7 @@ public class CarServiceImpl implements CarService {
 	
 	@Override
 	public void deleteById(Long id) {
+		
 		carRepository.deleteById(id);
     }
 }

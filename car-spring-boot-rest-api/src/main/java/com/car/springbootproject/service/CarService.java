@@ -1,6 +1,8 @@
 package com.car.springbootproject.service;
 
 import java.util.List;
+import java.util.Optional;
+
 import com.car.springbootproject.entity.Car;
 
 public interface CarService {
@@ -9,5 +11,8 @@ public interface CarService {
     
     public Car saveCar(Car car);
 
+	Optional<Car> findById(Long id);
+
+	public void deleteById(Long id);
     
 }

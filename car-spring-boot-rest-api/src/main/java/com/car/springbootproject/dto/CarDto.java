@@ -1,15 +1,32 @@
 package com.car.springbootproject.dto;
 
+import java.math.BigDecimal;
+
+import javax.validation.constraints.NotNull;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 @Data
-@Setter
-@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 public class CarDto {
 	
-	private int id;
+	private Long id;
+	
+	@NotNull
 	private String name;
+	
+	@NotNull
 	private String model;
-
+	
+	@NotNull
+	private String colour;
+	
+    @NotNull
+	private BigDecimal price;
+		
 }

@@ -39,7 +39,7 @@ public class CarController {
 	// get car by id
 
 	@GetMapping("/cars/{id}")
-	public ResponseEntity<CarDto> findById(@PathVariable long id) {
+	public ResponseEntity<CarDto> getCarById(@PathVariable long id) {
 		Optional<Car> car = carService.findById(id);
 
 		return ResponseEntity.ok(carMapper.modelToDto(car.get()));

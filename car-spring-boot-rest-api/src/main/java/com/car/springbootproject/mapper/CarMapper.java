@@ -2,9 +2,7 @@ package com.car.springbootproject.mapper;
 
 import java.util.List;
 
-import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 import com.car.springbootproject.dto.CarDto;
@@ -15,7 +13,7 @@ public interface CarMapper {
 	
 	CarMapper INSTANCE = Mappers.getMapper(CarMapper.class);
 	
-	CarDto modelToDto(Car car);
+CarDto modelToDto(Car car);
 	
 	List<CarDto> modelsToDtos(List<Car> cars);
 	

@@ -3,7 +3,6 @@ package com.car.springbootproject.service;
 import java.util.List;
 import java.util.Optional;
 
-import com.car.springbootproject.dto.CarDto;
 import com.car.springbootproject.entity.Car;
 
 public interface CarService {
